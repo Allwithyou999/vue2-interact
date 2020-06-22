@@ -1,0 +1,104 @@
+{
+  "_from": "vue2-interact",
+  "_id": "vue2-interact@0.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-jfJ3Eo33ut2PqCOkh4mTcDLQdwkSN5eBf/VWYTpmLLBIn//xWZE4Hjn7Qc7Pv9STd581+oswSua4E3A+/h579w==",
+  "_location": "/vue2-interact",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "vue2-interact",
+    "name": "vue2-interact",
+    "escapedName": "vue2-interact",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/vue2-interact/-/vue2-interact-0.0.3.tgz",
+  "_shasum": "b5463a44cfa6a411c5231b0e302fb726cfb11574",
+  "_spec": "vue2-interact",
+  "_where": "/Users/vbaranov/roses-are-red/app",
+  "author": {
+    "name": "Mateusz Rybczonek",
+    "email": "m.rybczonek@gmail.com"
+  },
+  "browser": "dist/vue2-interact.common.js",
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "bugs": {
+    "url": "https://github.com/mateuszRybczonek/vue2-interact/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "interact.js": "^1.2.8"
+  },
+  "deprecated": false,
+  "description": "Interact wrapper component for Vue.js apps",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "clean-css": "^4.1.11",
+    "eslint": "^3.19.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "node-sass": "^4.10.0",
+    "rollup": "^0.58.2",
+    "rollup-plugin-babel": "^3.0.6",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "rollup-plugin-vue": "^2.3.0",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^7.10.0",
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-processor-arbitrary-tags": "^0.1.0",
+    "vue": "^2.5.17",
+    "vuepress": "^0.14.4"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "homepage": "https://github.com/mateuszRybczonek/vue2-interact#readme",
+  "license": "MIT",
+  "main": "dist/vue2-interact.common.js",
+  "module": "dist/vue2-interact.common.js",
+  "name": "vue2-interact",
+  "peerDependencies": {
+    "vue": "^2.5.17"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateuszRybczonek/vue2-interact.git"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production rollup -c",
+    "docs:build": "vuepress build",
+    "docs:dev": "vuepress dev",
+    "lint": "yarn lint:js && yarn lint:css",
+    "lint:css": "stylelint src/**/*.{vue,css}",
+    "lint:js": "eslint --ext .js,.vue src",
+    "lint:js:fix": "yarn lint:js --fix",
+    "prepare": "yarn build",
+    "pretest": "yarn lint",
+    "watch": "NODE_ENV=dev rollup -c -w"
+  },
+  "style": "dist/vue2-interact.css",
+  "unpkg": "dist/vue2-interact.common.js",
+  "version": "0.0.3"
+}
